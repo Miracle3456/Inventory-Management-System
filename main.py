@@ -1,4 +1,5 @@
 items = {}
+print("Welcome to the Inventory Management System")
 def menu():
     print("1.Add item")
     print("2.Remove item")
@@ -46,7 +47,6 @@ def clear_stock():
 
 def main():
     choice = int(input("Enter your choice: "))
-
     if choice == 1:
         add_item()
     elif choice == 2:
@@ -57,6 +57,15 @@ def main():
         update_item()
     elif choice == 5:
         clear_stock()
+
+    elif choice != int():
+        print("Invalid choice! Please try again.")
+        menu()
+
+    elif choice == "":
+        print("Invalid choice! Please try again.")
+        menu()    
+
     elif choice == 6:
        print("Exiting...")
        exit() 
